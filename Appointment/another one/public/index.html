@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scheduler">
+        <div class="header">
+            <div class="avatar"></div>
+            <h2>Meeting with sumantra</h2>
+        </div>
+        <div class="meeting-info">
+            <p>30m Google Meet</p>
+            <p>Setup a 1:1 meeting with sumantra.</p>
+        </div>
+        <div class="scheduler-content">
+            <div class="calendar-container">
+                <h3>Select a Date & Time</h3>
+                <div class="calendar-header">
+                    <button id="prevMonth">&lt; Prev</button>
+                    <h4 id="currentMonth"></h4>
+                    <button id="nextMonth">Next &gt;</button>
+                </div>
+                <div id="calendar" class="calendar"></div>
+                <div id="timeSlots" class="time-slots"></div>
+                <div id="selectedDateTime"></div>
+            </div>
+            <div class="form-container">
+                <h3>Enter Your Details</h3>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Additional Notes:</label>
+                        <textarea id="notes" name="notes" rows="3"></textarea>
+                    </div>
+                    <input type="hidden" id="date" name="date">
+                    <input type="hidden" id="time" name="time">
+                    <div class="button-group">
+                        <button type="submit" id="confirmButton">Confirm Booking</button>
+                        <button type="button" id="cancelButton">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="confirmationMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

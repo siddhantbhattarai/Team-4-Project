@@ -15,18 +15,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/dayschedule-widget@latest/dist/dayschedule-widget.min.js" defer></script>
 
+  <!-- Include your custom JavaScript file -->
   <script src="/dist/dayschedule-widget.js"></script>
-
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#"> </a>
-      </div>
-    </nav>
-  </header>
   <div class="container px-3 my-5">
     <main>
       <div class="row">
@@ -34,15 +27,13 @@
           <h1 class="display-4">ISMT College</h1>
           <p class="lead">
             Click on the <strong>book appointment</strong> button to try this
-            out. You can book appointment with our teacher adnd councler for admission process or about the details of
-            course.
-
+            out. You can book an appointment with our teachers and counselors for the admission process or to learn more about our courses.
           </p>
         </div>
         <div class="col-md-6">
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.4Ljk-pOMz5W3RySfGpVpmAHaEU%26pid%3DApi&f=1&ipt=27f4e4e5dd30a79fd6577d62cd1af935ca0f0a882256b5a7f5644fce12e245b0&ipo=images"
-            class="img-fluid" />
+            class="img-fluid" alt="ISMT College" />
         </div>
       </div>
 
@@ -53,11 +44,13 @@
             <div class="card-body">
               <h5 class="card-title">Sakchhyam Subedi</h5>
               <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
+                Book an appointment with Sakchhyam Subedi to discuss our IT courses, admission process, and career opportunities.
               </p>
-              <button class="btn btn-primary" onclick="openDaySchedule('https://hello001.dayschedule.com/')">
-                Book appointment
+              <button class="btn btn-primary" onclick="location.href='/Appointment/another one/public/index.html'">
+                Book online appointment
+              </button>
+              <button class="btn btn-secondary" onclick="location.href='/Appointment/another one/public/index.html'">
+                Book offline appointment
               </button>
             </div>
           </div>
@@ -69,11 +62,14 @@
             <div class="card-body">
               <h5 class="card-title">Amrita Thapa</h5>
               <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
+                Schedule a meeting with Amrita Thapa to learn more about our management courses and how they can help you achieve your career goals.
               </p>
-              <button class="btn btn-primary" onclick="openDaySchedule('https://hello001.dayschedule.com/')">
-                Book appointment
+
+              <button class="btn btn-primary" onclick="location.href='/Appointment/another one/public/index.html'">
+                Book online appointment
+              </button>
+              <button class="btn btn-secondary" onclick="location.href='/Appointment/another one/public/index.html'">
+                Book offline appointment
               </button>
             </div>
           </div>
@@ -83,11 +79,9 @@
   </div>
 
   <footer class="page-footer font-small pt-4 px-4">
-
     <div class="container d-flex justify-content-center">
       <p>ISMT © 2024 Copyright </p>
     </div>
-
   </footer>
 </body>
 
