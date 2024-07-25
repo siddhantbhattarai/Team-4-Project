@@ -11,7 +11,7 @@
 3. No Online/Offline Counseling Booking
 4. No Online Fee Payment System
 5. No Online Semester Result Access
-6. No Online Admission Booking and Information
+6. No proper Attendance System
 
 # Solutions
 
@@ -68,15 +68,20 @@ Benefits:
 - Immediate access to results.
 - Reduced administrative workload.
 
-6. Enable Online Admission Booking and Information
+6. Enable Attendance system Easy
 
 Features:
-- Online application and counseling booking.
-- Information about faculties and available courses.
-- Token generation for offline visits.
+- Face Recognition
+- Data save and Exported to CSV file.
 
 Benefits:
-- Simplified admission process.
-- Easy access to information for prospective students.
+- Time saving
+- Automated System.
 
 ## Note : In case of Features, there might be some changes in the project during the development process. 
+
+
+## Things that we are going to make 
+
+1. Attendance System 
+2. Appointment Booking System

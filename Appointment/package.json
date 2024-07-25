@@ -1,0 +1,17 @@
+{
+  "name": "team-4-project",
+  "version": "1.0.0",
+  "description": "1. Lack of Student Portal\r 2. No Library Management System\r 3. No Online/Offline Counseling Booking\r 4. No Online Fee Payment System\r 5. No Online Semester Result Access\r 6. No Online Admission Booking and Information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  }
+}
