@@ -8,7 +8,10 @@ const bookingForm = document.getElementById('bookingForm');
 const confirmationMessage = document.getElementById('confirmationMessage');
 const cancelButton = document.getElementById('cancelButton');
 
-let currentDate = new Date(2024, 6, 24); 
+// Add an element to capture "with whom" information
+const withWhomElement = document.getElementById('withWhom'); // Add this element in your HTML
+
+let currentDate = new Date(2024, 6, 24);
 let selectedDate = null;
 let selectedTime = null;
 
@@ -121,6 +124,7 @@ bookingForm.addEventListener('submit', async (e) => {
             notes: formData.get('notes'),
             date: formData.get('date'),
             time: formData.get('time'),
+            withWhom: withWhomElement ? withWhomElement.textContent : '' // Capture "with whom" information
         };
 
         const response = await fetch('/book', {
@@ -134,6 +138,13 @@ bookingForm.addEventListener('submit', async (e) => {
         const message = await response.text();
         confirmationMessage.textContent = message;
         confirmationMessage.style.display = 'block';
+
+        // Redirect to the main page after a successful booking
+        if (response.ok) {
+            setTimeout(() => {
+                window.location.href = '/'; // Redirect to the main page
+            }, 3000); // Redirect after 3 seconds
+        }
     } else {
         confirmationMessage.textContent = 'Please select a date and time.';
         confirmationMessage.style.display = 'block';
@@ -152,5 +163,12 @@ cancelButton.addEventListener('click', () => {
     timeSlotElements.forEach(slot => slot.classList.remove('selected'));
 });
 
+function goBack() {
+    window.history.back();
+}
+
 generateCalendar(currentDate);
 generateTimeSlots();
+
+
+
